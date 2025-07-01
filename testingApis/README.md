@@ -15,27 +15,14 @@ npm install cypress --save-dev
 npx cypress open
 ```
 
-## 📁 Estructura del Proyecto
 
-```
-testingApis/
-├── cypress/
-│   ├── e2e/
-│   │   ├── apiSignUp.cy.js     # Test de registro de usuarios
-│   │   ├── tags.cy.js          # Test de mocking de tags
-│   │   └── nueva.cy.js         # Test de mocking de artículos
-│   ├── fixtures/
-│   │   └── tags.json           # Datos de prueba para tags
-│   └── support/
-└── README.md
-```
 
 ## 🧪 Tests Implementados
 
 ### API Sign Up Test (`apiSignUp.cy.js`)
 Prueba automatizada para el registro de usuarios:
 
-```javascript
+
 describe('log',()=>{
     it("Crear usuario ok",()=>{
         cy.intercept('POST', '/api/users').as('tau99')
