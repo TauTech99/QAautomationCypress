@@ -48,7 +48,7 @@ describe('log',()=>{
         })
     })
 });
-```
+
 
 **Características:**
 - ✅ Generación de datos únicos por ejecución
