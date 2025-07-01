@@ -13,7 +13,7 @@ npm install cypress --save-dev
 
 # Abrir Cypress
 npx cypress open
-```
+
 
 
 
@@ -59,7 +59,7 @@ describe('log',()=>{
 ### Tags Mocking Test (`tags.cy.js`)
 Prueba de mocking para tags usando fixtures:
 
-```javascript
+
 describe('Mocking Tests', () => {
     it('Mocking',()=>{
         cy.intercept('GET', '/api/tags*',{fixture: 'tags.json'}).as('Tau99Tags');
@@ -71,7 +71,7 @@ describe('Mocking Tests', () => {
         cy.contains('Bondar Academy').should('be.visible')
     });
 })
-```
+
 
 ## 📊 Códigos de Estado HTTP
 
@@ -103,7 +103,7 @@ npx cypress run --headless
 
 ### `tags.json`
 Archivo de datos de prueba para tags:
-```json
+
 {
     "tags": [
         "Test",
@@ -118,7 +118,7 @@ Archivo de datos de prueba para tags:
         "Programming"
     ]
 }
-```
+
 
 ## 🛠️ Técnicas Utilizadas
 
