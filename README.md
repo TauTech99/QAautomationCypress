@@ -8,4 +8,3 @@
 | 401 | Unauthorized | Sin autorización |
 | 404 | Not Found | Recurso no encontrado |
 
-![alt text](image.png)
