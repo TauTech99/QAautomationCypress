@@ -13,7 +13,7 @@ npm install cypress --save-dev
 
 # Abrir Cypress
 npx cypress open
-
+```
 
 
 
@@ -22,7 +22,7 @@ npx cypress open
 ### API Sign Up Test (`apiSignUp.cy.js`)
 Prueba automatizada para el registro de usuarios:
 
-
+```javascript
 describe('log',()=>{
     it("Crear usuario ok",()=>{
         cy.intercept('POST', '/api/users').as('tau99')
@@ -48,7 +48,7 @@ describe('log',()=>{
         })
     })
 });
-
+```
 
 **Características:**
 - ✅ Generación de datos únicos por ejecución
@@ -59,7 +59,7 @@ describe('log',()=>{
 ### Tags Mocking Test (`tags.cy.js`)
 Prueba de mocking para tags usando fixtures:
 
-
+```javascript
 describe('Mocking Tests', () => {
     it('Mocking',()=>{
         cy.intercept('GET', '/api/tags*',{fixture: 'tags.json'}).as('Tau99Tags');
@@ -71,7 +71,7 @@ describe('Mocking Tests', () => {
         cy.contains('Bondar Academy').should('be.visible')
     });
 })
-
+```
 
 ## 📊 Códigos de Estado HTTP
 
@@ -103,7 +103,7 @@ npx cypress run --headless
 
 ### `tags.json`
 Archivo de datos de prueba para tags:
-
+```json
 {
     "tags": [
         "Test",
@@ -118,7 +118,7 @@ Archivo de datos de prueba para tags:
         "Programming"
     ]
 }
-
+```
 
 ## 🛠️ Técnicas Utilizadas
 
